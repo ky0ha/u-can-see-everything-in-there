@@ -1,0 +1,9 @@
+from typing import overload
+
+
+@overload
+def func(a: int) -> int: ...
+@overload
+def func(a: str) -> str: ...
+
+def func(a) -> None: ...
